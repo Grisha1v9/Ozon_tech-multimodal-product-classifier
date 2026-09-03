@@ -1,0 +1,4 @@
+{
+   "image": "stardusd/ozon-solution:v5",
+   "entry_point": "python -u run.py"
+}
