@@ -64,3 +64,11 @@
 
 ```bash
 python run.py --test_data_path data/test.csv --output_path submit.csv
+```
+
+### 3. Сборка Docker-образа
+
+```bash
+docker build -t stardusd/ozon-solution:v1 .
+docker run --rm --gpus all -v "$PWD":/app stardusd/ozon-solution:v1 \
+    python -u run.py -i /app/test.csv -o /app/submit.csv
