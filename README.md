@@ -48,4 +48,19 @@
 
 `Python` · `PyTorch` · `Qwen3-VL-Embedding-2B` · `LightGBM` · `Scikit-learn` · `Pandas` · `NumPy` · `Docker` · `Regex` · `Hugging Face Transformers`
 
-## Структура репозитория
+## Как воспроизвести
+
+### 1. Обучение модели (Google Colab)
+
+Открой ноутбук `ozon_tech.ipynb` в Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Grisha1v9/Ozon_tech-multimodal-product-classifier/blob/main/ozon_tech.ipynb)
+
+Выполни все ячейки по порядку. Будут сгенерированы эмбеддинги и обучены классификаторы.
+
+### 2. Инференс на новых данных
+
+Если нужно прогнать модель на тестовом наборе, используй `run.py`:
+
+```bash
+python run.py --test_data_path data/test.csv --output_path submit.csv
