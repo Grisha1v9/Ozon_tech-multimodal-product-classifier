@@ -1,0 +1,1 @@
+# Ozon_tech-multimodal-product-classifier
