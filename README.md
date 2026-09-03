@@ -41,11 +41,9 @@
 
 `Python` · `PyTorch` · `Qwen3-VL-Embedding-2B` · `LightGBM` · `Scikit-learn` · `Pandas` · `NumPy` · `Docker` · `Regex`
 
-## Структура репозитория:
+## 🚀 Как воспроизвести
 
-ozon_tech/
-├── run.py # Точка входа для инференса
-├── classifiers.pkl # Обученные модели (LogReg + LightGBM)
-├── metadata.json # Конфигурация Docker-образа
-├── Dockerfile # Описание Docker-образа (опционально)
-├── ozon_tech.ipynb # Jupyter-ноутбук с EDA и обучением
+1. Открой ноутбук `ozon_tech.ipynb` в Google Colab:
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Grisha1v9/Ozon_tech-multimodal-product-classifier/blob/main/ozon_tech.ipynb)
+2. Выполни все ячейки по порядку.
+3. Для инференса на новых данных используй обученные модели из `classifiers.pkl` (если нужен контейнер – Dockerfile и скрипт можно восстановить по ноутбуку).
